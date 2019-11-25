@@ -43,15 +43,32 @@ namespace MathToGraph.Controllers
         }
 
         // POST: api/EquationSolver
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///  {
+        ///      "equation": "a+b",
+        ///      "jsonData": "[{\"a\":\"10\",\"b\":\"39\"},
+        ///      {\"a\":\"20\",\"b\":\"39\"},
+        ///      {\"a\":\"30\",\"b\":\"39\"},
+        ///      {\"a\":\"60\",\"b\":\"39\"}]";,
+        ///      "resultColName": "Total"
+        /// }
+        /// <remarks>
+        /// <param name="value">   
+        /// </param>
+        /// <returns></returns>
         [HttpPost]
         public double[] Post([FromBody]Data value)
         {
-            value.Equation  = "a+b";
-      
-            value.JsonData = "[{\"a\":\"10\",\"b\":\"39\"}," +
-                "{\"a\":\"20\",\"b\":\"39\"}," +
-                "{\"a\":\"30\",\"b\":\"39\"}," +
-                 "{\"a\":\"60\",\"b\":\"39\"}]";
+            //value.Equation = "a+b";
+
+            //value.JsonData = "[{\"a\":\"10\",\"b\":\"39\"}," +
+            //    "{\"a\":\"20\",\"b\":\"39\"}," +
+            //    "{\"a\":\"30\",\"b\":\"39\"}," +
+            //     "{\"a\":\"60\",\"b\":\"39\"}]";
             var table = JsonConvert.DeserializeObject<List<Dictionary<string, string>>>(value.JsonData);
             var variables = GetVariablesName(value.Equation);
 
@@ -83,7 +100,7 @@ namespace MathToGraph.Controllers
 
             dt.CreateSolutionColumn(value.Equation, typeof(double), value.resultColName);
 
-            var result = Enumerable.Range(0, dt.Rows.Count).Select(p=>(double)dt.Rows[p][value.resultColName]).ToArray();
+            var result = Enumerable.Range(0, dt.Rows.Count).Select(p => (double)dt.Rows[p][value.resultColName]).ToArray();
             return result;
         }
 

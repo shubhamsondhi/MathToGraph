@@ -7,6 +7,7 @@ C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\bin\Debug\netc
 C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\bin\Debug\netcoreapp3.0\MathToGraph.runtimeconfig.dev.json
 C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\bin\Debug\netcoreapp3.0\MathToGraph.dll
 C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\bin\Debug\netcoreapp3.0\MathToGraph.pdb
+C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\bin\Debug\netcoreapp3.0\MathToGraph.xml
 C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Razor.Language.dll
@@ -90,7 +91,6 @@ C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\bin\Debug\netc
 C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\obj\Debug\netcoreapp3.0\MathToGraph.csprojAssemblyReference.cache
 C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\obj\Debug\netcoreapp3.0\staticwebassets\MathToGraph.StaticWebAssets.Manifest.cache
 C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\obj\Debug\netcoreapp3.0\staticwebassets\MathToGraph.StaticWebAssets.xml
 C:\Users\shubh\Desktop\working\New folder\MathToGraph\MathToGraph\obj\Debug\netcoreapp3.0\MathToGraph.MvcApplicationPartsAssemblyInfo.cs

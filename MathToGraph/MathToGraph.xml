@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MathToGraph</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "M:MathToGraph.Controllers.EquationSolverController.Post(MathToGraph.Data)" -->
+    </members>
+</doc>
