@@ -1,0 +1,13 @@
+.textarea {
+width: 98%;
+height: 98%;
+}
+.varGrid{
+margin-top: 50px;
+text-align: center;
+  border: 1px solid black;
+}
+/* .varGrid label{
+
+  margin-bottom: 50px;
+} */

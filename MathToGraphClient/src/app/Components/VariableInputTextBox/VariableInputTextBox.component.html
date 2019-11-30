@@ -1,9 +1,18 @@
-<div class="row">
-  <div class="col-6">
-    <label>variable 1</label>
-  </div>
-  <div class="col-6">
-    <textarea ></textarea>
-  </div>
+<label>Values Count:</label> {{ varData.data.split(",").length }}
+<mat-grid-list cols="3" rowHeight="50px" class="varGrid">
+  <mat-grid-tile colspan="1" rowspan="2" [style.background]="''">
+    <label>{{ varData.variableName }}</label>
+  </mat-grid-tile>
+  <mat-grid-tile colspan="2" rowspan="5" [style.background]="''">
+    <textarea
+      class="textarea"
 
-</div>
+      [(ngModel)]="varData.data"
+      [style.background]="isValid ? '':'red'"
+      (focusout)="checkValidity()"
+    ></textarea>
+  </mat-grid-tile>
+</mat-grid-list>
+{{ isValid }}
+<br />
+<!-- <label *ngIf="isValid"]> Invalid Value Found</label> -->
