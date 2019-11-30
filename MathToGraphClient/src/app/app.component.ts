@@ -12,7 +12,7 @@ export class AppComponent {
   constructor(public equationService: EquationSolverServiceService) {}
   processIt() {
     console.log('equationVal', this.equationVal);
-    this.equationService.addHero(this.equationVal).subscribe(result => {
+    this.equationService.getEquationVariables(this.equationVal).subscribe(result => {
       console.table(result);
     });
   }

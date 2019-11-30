@@ -7,6 +7,11 @@ import { catchError, retry } from 'rxjs/operators';
 })
 export class EquationSolverServiceService {
 
+  HttpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type':  'application/json'
+    })
+  };
   constructor(private http: HttpClient) { }
 
   private handleError(error: HttpErrorResponse) {
@@ -24,16 +29,14 @@ export class EquationSolverServiceService {
     return throwError(
       'Something bad happened; please try again later.');
   }
+getApi(method: string): string{
 
-  addHero(equation: string): Observable<any> {
-    const httpOptions = {
-      headers: new HttpHeaders({
-        'Content-Type':  'application/json'
-      })
-    };
-    const values = '"string"';
-    const url = 'http://localhost:51040/api/EquationSolver';
-    return this.http.post<any>(url,  '"' + equation + '"', httpOptions)
+  return 'http://localhost:51040/api/' + method;
+}
+  getEquationVariables(equation: string): Observable<string[]> {
+
+    const url = this.getApi('GetVariablesName');
+    return this.http.post<any>(url,  '"' + equation + '"', this.HttpOptions)
       .pipe(
         catchError(this.handleError)
       );

@@ -63,12 +63,7 @@ namespace MathToGraph.Controllers
         [HttpPost]
         public double[] Post([FromBody]Data value)
         {
-            //value.Equation = "a+b";
-
-            //value.JsonData = "[{\"a\":\"10\",\"b\":\"39\"}," +
-            //    "{\"a\":\"20\",\"b\":\"39\"}," +
-            //    "{\"a\":\"30\",\"b\":\"39\"}," +
-            //     "{\"a\":\"60\",\"b\":\"39\"}]";
+            
             var table = JsonConvert.DeserializeObject<List<Dictionary<string, string>>>(value.JsonData);
             var variables = GetVariablesName(value.Equation);
 

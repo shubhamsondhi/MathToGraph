@@ -7060,11 +7060,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shubh\\Desktop\\working\\New folder\\MathToGraph\\MathToGraph\\MathToGraph.csproj",
+      "projectUniqueName": "C:\\Users\\shubh\\Desktop\\working\\MathToGraph\\MathToGraph\\MathToGraph.csproj",
       "projectName": "MathToGraph",
-      "projectPath": "C:\\Users\\shubh\\Desktop\\working\\New folder\\MathToGraph\\MathToGraph\\MathToGraph.csproj",
+      "projectPath": "C:\\Users\\shubh\\Desktop\\working\\MathToGraph\\MathToGraph\\MathToGraph.csproj",
       "packagesPath": "C:\\Users\\shubh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shubh\\Desktop\\working\\New folder\\MathToGraph\\MathToGraph\\obj\\",
+      "outputPath": "C:\\Users\\shubh\\Desktop\\working\\MathToGraph\\MathToGraph\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
